@@ -28,14 +28,25 @@ body{
 a{
     text-decoration: none;
     color:  black;
+    font-weight: 300;
 }
 
 li{
     list-style: none;
 }
 
+p{
+  font-weight:300 ;
+  line-height: 1.4;
+}
+ 
+img{
+    width: 100%;
+    
+}
+
 .container{
-    max-width: 1150px;
+    max-width: 1100px;
     box-sizing: border-box;
     overflow: none;
     margin: 0px auto;
@@ -43,8 +54,7 @@ li{
 
 .flex{
     display: flex;
-    align-items: center;
-    justify-content: center;  
+     
 }
 
 
@@ -135,8 +145,8 @@ div.nav ul a:hover{
  .hero .text-btn button{
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
     font-size: 18px;
     border-radius: 6px;
  }
@@ -150,17 +160,24 @@ div.nav ul a:hover{
  /* hero form-start  */
 
 div.form{
+  
 
   width: 400px;
-  height: 300px;
-  background-color: white;
+  background-color: var(--white-color);
   padding: 40px 30px;
   border-radius: 6px;
-  box-shadow: 1px 1px 5px blue;
+  box-shadow: 1px 1px 5px var(--pimary-color);
   position: relative;
   top: 100px;
   z-index: 100;
+  height: 350px;
 
+}
+
+div.form h2{
+    color: var(--dark-color);
+    font-size: 25px;
+    font-weight: 300;
 }
 
 div.form input{
@@ -168,8 +185,9 @@ div.form input{
     border: none;
     padding: 3px 0;
     border-bottom: 1px solid rgb(118, 116, 116);
-    margin: 20px 0px;
-    font-size: 17px;
+    margin-top: 40px;
+    font-size: 18px;
+
 
 }
 
@@ -184,6 +202,8 @@ div.form button{
     border: none;
     background-color: var(--pimary-color);
     border-radius: 5px;
+    margin-top: 30px;
+   
 }
 
 
@@ -191,7 +211,7 @@ div.form button{
    content: "";
    height: 100px;
    position: absolute;
-   background-color: white; 
+   background-color:var(--white-color); 
    width: 100%;
    bottom: -80px;
    transform: skewY(-3deg);
@@ -199,7 +219,116 @@ div.form button{
   
 
 }
+
 /* Hero SEction End */
+
+
+/* clint-section start  */
+
+ #clint-section{
+    margin-top: 130px;
+    background-color: var(--white-color);
+
+ }
+
+ .clint-section{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+ }
+
+ .clint-section h3{
+  
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+
+ .clint-number{
+    justify-content: space-evenly;
+    width: 100%;
+    
+ }
+
+
+ .diployment{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+ }
+
+
+ .diployment i{
+    font-size: 55px;
+ }
+
+ .diployment .number{
+
+    font-size: 30px;
+    font-weight: 400;
+
+ }
+
+ .diployment .text{
+    font-size: 18px;
+    color: var(--pimary-color);
+    font-weight: 400;
+ }
+
+
+/* clint-section End  */
+
+/* install-prosess Start */
+
+#install{
+    background-color: var(--white-color);
+    margin-top: 30px;
+
+}
+
+.install{
+    padding-inline: var(--padding-inline);
+    width: 100%;
+    height: 250px;
+    background-color:var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.install-command{
+ width: 60%;
+}
+ 
+
+.install .how-to-main{
+ 
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  justify-content: space-around;
+
+  
+  
+}
+
+.install .how-to{
+    background-color: white;
+    padding: 22px 25px ;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: 1px 1px 5px;
+}
+
+
+
+
+
+/* install-prosess End */
+
+
 
 
 
