@@ -394,6 +394,7 @@ div.form button{
 
  #language{
     padding-block: var(--padding-block);
+    background-color: var(--white-color);
  }
 
  .language{
@@ -446,3 +447,63 @@ div.form button{
 /* Language section-End */
 
 
+
+/* Footer Section Start  */
+
+ footer{
+    background-color: var(--dark-color);
+    margin-top: 30px;
+ }
+
+ .footer{
+    justify-content: space-around;
+    align-content: center;
+    padding-inline: var(--padding-inline);
+    padding-block: 80px;
+    color: white;
+    align-items: center;
+ }
+
+ .footer-logo{
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .footer-logo h1{
+    font-size: 35px;
+    font-weight: 600;
+ }
+
+ .footer-logo p{
+    font-size: 20px;
+    word-spacing: 6px;
+ }
+
+
+
+ .footer-menu ul{
+    
+    flex-direction: column;
+    gap: 20px;
+    
+ }
+
+
+ .footer-menu a{
+    color: white;
+    font-size: 18px;
+
+ }
+
+
+ .social-media{
+  display: flex;
+  gap: 20px;
+}
+
+.social-media i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Footer Section End  */
