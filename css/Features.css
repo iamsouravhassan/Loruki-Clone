@@ -1,0 +1,159 @@
+
+ /* features section start  */
+
+#features-head{
+ background-color: var(--pimary-color);
+ 
+}
+
+.features-head{
+    color: var(--white-color);
+    padding-inline: var(--padding-inline);
+    padding-block: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.features-text h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.features-text{
+    width: 45%;
+}
+
+.features-text p{
+    font-size: 22px;
+    line-height: 1.6;
+    
+}
+
+
+
+.features-image img{
+    width: 200px;
+}
+
+
+
+#features-head2{
+    background-color: rgb(236, 232, 232);
+}
+
+
+.features-head2{
+    color: black;
+    padding-inline: var(--padding-inline);
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+  
+}
+
+
+.features-text2 h1{
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.features-image2 img{
+    width: 300px;
+}
+
+
+/* Features Section End  */
+
+
+/* Use-case Section Start  */
+
+
+ #use-case{
+    margin-block:var(--padding-block) ;
+    background-color: var(--white-color);
+
+
+ }
+
+ .use-case{
+    padding-inline: var(--padding-inline);
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    
+    
+    
+ }
+
+
+ .server-all{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(232, 231, 228);
+    display: flex;
+    padding: 30px 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    
+ }
+ 
+ .server-all i{
+    font-size: 50px;
+    color: rgb(40, 40, 40);
+ }
+ 
+
+ .server-1{
+    grid-column: 1;
+    grid-column-end: -1;
+ }
+
+ .server-2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+ .server-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+ }
+
+
+
+/* Use-case Section End   */
+
+
+/* Features-Section -Responsive */
+
+@media (max-width:750px){
+ .features-head,.features-head2{
+    padding-block: 25px;
+    flex-direction: column;
+    gap: 20px;
+   
+ }
+
+ .features-text,.features-text2{
+    text-align: center;
+    width: 100%;
+ }
+
+
+
+ .use-case{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+
+}
+
+/* Features-Section -Responsive */
