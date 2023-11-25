@@ -109,16 +109,14 @@ div.nav ul a:hover{
  #hero{
     background-color: var(--pimary-color);
     color: white;
-    height: 400px;
     position: relative;
  }
 
  .hero{
-    height: 100%;
     padding-inline: var(--padding-inline);
     justify-content: space-between;
     align-items: center;
-   
+    
  }
 
 
@@ -129,6 +127,9 @@ div.nav ul a:hover{
     gap: 30px;
     flex-direction: column;
     align-items: start;
+    animation: hero-left;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
  }
  
  .hero .text-btn h1{
@@ -162,16 +163,20 @@ div.nav ul a:hover{
 
 div.form{
   
-
   width: 400px;
   background-color: var(--white-color);
-  padding: 40px 30px;
+  padding: 30px 30px;
   border-radius: 6px;
   box-shadow: 1px 1px 5px var(--pimary-color);
   position: relative;
   top: 100px;
   z-index: 100;
-  height: 350px;
+  
+ animation: form;
+ animation-duration: 1.5s;
+ animation-delay: 0.1s;
+ 
+ 
 
 }
 
@@ -198,7 +203,7 @@ div.form input:focus{
 
  
 div.form button{
-    padding: 7px 20px;
+    padding: 10px 30px;
     color: white;
     border: none;
     background-color: var(--pimary-color);
@@ -227,7 +232,7 @@ div.form button{
 /* clint-section start  */
 
  #clint-section{
-    margin-top: 130px;
+    margin-top: 135px;
     background-color: var(--white-color);
 
  }
@@ -240,7 +245,7 @@ div.form button{
 
  .clint-section h3{
   
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     padding-bottom: 10px;
  }
@@ -260,7 +265,8 @@ div.form button{
 
 
  .diployment i{
-    font-size: 55px;
+    font-size: 50px;
+    color: rgb(21, 18, 18);
  }
 
  .diployment .number{
@@ -290,7 +296,6 @@ div.form button{
 .install{
     padding-inline: var(--padding-inline);
     width: 100%;
-    height: 250px;
     background-color:var(--white-color);
     display: flex;
     align-items: center;
@@ -307,8 +312,7 @@ div.form button{
  
   display: flex;
   flex-direction: column;
-  height:100%;
-  justify-content: space-around;
+  gap: 30px;
 
   
   
@@ -456,12 +460,12 @@ div.form button{
  }
 
  .footer{
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     padding-inline: var(--padding-inline);
     padding-block: 80px;
     color: white;
-    align-items: center;
+    align-items: flex-start;
  }
 
  .footer-logo{
@@ -507,3 +511,123 @@ div.form button{
 }
 
 /* Footer Section End  */
+
+
+/* animation add  */
+
+@keyframes hero-left{
+    0%{
+        transform: translate(-120%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+@keyframes form{
+    0%{
+        transform: translate(120%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+
+
+/* resposive web desaign */
+
+
+@media (max-width:700px) {
+    
+    
+    div.nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+    
+    
+    
+    
+    .hero{
+        
+        flex-direction: column;
+        padding-top:30px ;
+    
+    }
+    
+   .hero .text-btn{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    
+}
+
+.hero .text-btn h1{
+    font-size: 30px;
+}
+
+.hero .text-btn p{
+    line-height:1.3;
+    font-weight: 300;
+    font-size: 14px;
+
+
+ }
+
+ div.form{
+    width: 300px;
+ }
+
+div.form h2{
+    font-size: 23px;
+}
+
+div.form input{
+    margin-top: 30;
+    font-size: 14px;
+}
+
+div.form button{
+    padding: 7px 15px;
+}
+
+.clint-section h3{
+
+  font-size: 17px;
+
+}
+
+
+.clint-number{
+    flex-direction: column;
+    gap: 25px;
+}
+
+.install{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.install-command{
+  width: 350px;
+}
+
+
+.cta{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+}
