@@ -7,7 +7,7 @@
 }
 
 .features-head{
-    color: white;
+    color: var(--white-color);
     padding-inline: var(--padding-inline);
     padding-block: 45px;
     justify-content: space-between;

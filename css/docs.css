@@ -1,0 +1,199 @@
+
+
+ /* Docs  Head Start  */
+ 
+#docs-head{
+    background-color: var(--pimary-color);
+    
+   }
+   
+   .docs-head{
+       color: var(--white-color);
+       padding-inline: var(--padding-inline);
+       padding-block: 45px;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   
+   
+   .docs-text h1{
+       font-size: 50px;
+       font-weight: 300;
+       margin-bottom: 20px;
+   
+   }
+   
+   .docs-text{
+       width: 45%;
+   }
+   
+   .docs-text p{
+       font-size: 22px;
+       line-height: 1.6;
+       
+   }
+   
+   
+   
+   .docs-image img{
+       width: 200px;
+   }
+   
+
+   /* Docs-Head End  */
+    #command{
+        
+        background-color: white;
+        
+
+    }
+   .command{
+    padding-inline: var(--padding-inline);
+    margin-block: 40px;
+    justify-content: space-between;
+    gap: 30px;
+    
+   }
+
+   .command1{
+    flex-direction: column;
+    gap: 15px;
+    background: rgb(224, 221, 216);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(227, 220, 208) ;
+    width: 330px; 
+    height: fit-content; 
+
+   }
+
+   .command1 h3{
+    padding-block: 10px;
+    font-size: 24px;
+    font-weight: 300;
+   }
+  
+   .command1 a{
+    border-bottom: 1px solid rgb(187, 175, 175);
+    padding-bottom: 7px;
+    color: rgb(61, 61, 61);
+    
+   }
+
+   .command1 a:hover{
+    transform: scale(1.04);
+    color: black;
+   }
+
+
+   .command2{
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(207, 203, 203) ;
+    padding: 30px 20px;
+    border-radius: 15px;
+    color: rgb(74, 74, 74);
+    width: 65%;
+   }
+   
+   .command h3{
+    padding-bottom: 10px;
+    font-weight: 300;
+   }
+
+   .introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   }
+  
+   .green{
+    background-color: rgb(74, 213, 74);
+    padding: 10px;
+    color: white;
+    
+   }
+
+
+   .lorem-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+   }
+
+   .lorem-btn button{
+    padding: 15px 30px;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+   }
+
+   .Requirements h3{
+    padding-bottom: 15px;
+   }
+
+   .install-com h3{
+    padding-bottom: 15px;
+   }
+  
+   .install-process{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .process1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+   }
+  
+   .process1 div{
+    background-color: var(--dark-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 300;
+   }
+
+
+
+   /* Docs-command End  */
+
+     @media (max-width:750px){
+        .command{
+            flex-direction: column;
+        }
+
+        .command1 ,.command2{
+            width: 90%;
+            margin: auto;
+        }
+
+        .docs-head{
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+           
+        }
+
+        .docs-text{
+            width: 90%;
+            margin: auto
+        } 
+
+        
+     }
+
+   
+   /* Responsive Start  */
+
+
+  
+
+   /* Responsive End  */
+   
