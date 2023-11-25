@@ -75,6 +75,8 @@ nav{
 div.nav{
     justify-content: space-between;
     padding-inline:var(--padding-inline);
+    align-items: center;
+   
 }
 
 
@@ -631,3 +633,4 @@ div.form button{
 
 
 }
+
